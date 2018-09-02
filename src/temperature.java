@@ -15,13 +15,13 @@ or normal. Make sure to test the program with each of the three possible value r
     public static void main(String[] args) {
 
         double user_TEMP;
-        double defined_LTEMP = 92.0;
-        double defined_HTEMP = 104.0;
+        double defined_LTEMP = 91.9;
+        double defined_HTEMP = 104.1;
 
         Scanner user_INPUT = new Scanner(System.in); // collecting users input
 //        user_TEMP = user_INPUT.nextDouble(); --- Before System out. -- no good9
 
-        System.out.println("Enter a temperature between " + defined_LTEMP + " and " + defined_HTEMP + ": ");
+        System.out.println("Enter a temperature between 92.0 and 104.0: ");
         user_TEMP = user_INPUT.nextDouble();
 
         if (user_TEMP > defined_LTEMP && user_TEMP < defined_HTEMP) {
